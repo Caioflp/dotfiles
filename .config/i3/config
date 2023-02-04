@@ -41,6 +41,8 @@ client.focused #d6304a #285577 #ffffff #2e9ef4 #920b40
 
 # Change modifier key
 set $mod Mod4
+# Change compose key
+set $compose Mod1
 
 # use these keys for focus, movement, and resize directions when reaching for
 # the arrows is not convenient
@@ -199,7 +201,13 @@ bindsym $mod+o      resize grow width 5 px or 5 ppt
 exec_always --no-startup-id i3-msg '[title="^todo.md"] kill'
 exec_always --no-startup-id "xterm -e 'nvim ~/todo.md'"
 for_window [title="^todo.md"] move scratchpad
-bindsym $mod+t [title="^todo.md"] scratchpad show
+bindsym $mod+$compose+t [title="^todo.md"] scratchpad show
+
+# Auto start journal and move it to scratchpad
+exec_always --no-startup-id i3-msg '[title="^journal.md"] kill'
+exec_always --no-startup-id "xterm -e 'nvim ~/fgv/journal.md'"
+for_window [title="^journal.md"] move scratchpad
+bindsym $mod+$compose+j [title="^journal.md"] scratchpad show
 
 # Picom
 exec_always --no-startup-id picom
