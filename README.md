@@ -1,7 +1,7 @@
 # Dotfiles
 
 These are my user dotfiles.
-The repository configuration was taken from [https://www.ackama.com/what-we-think/the-best-way-to-store-your-dotfiles-a-bare-git-repository-explained/](here).
+The repository configuration was taken from [here](https://www.ackama.com/what-we-think/the-best-way-to-store-your-dotfiles-a-bare-git-repository-explained/).
 
 ## Instructions
 
