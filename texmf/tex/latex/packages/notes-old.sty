@@ -1,0 +1,63 @@
+\ProvidesPackage{notes}
+
+%% Document stuff
+
+%% Packages
+\usepackage{amsmath, mathtools, amssymb, amsfonts, amsthm, mathrsfs}
+\usepackage{fancyhdr}
+% \usepackage[left=1.5cm, hcentering=true, bottom=2cm, top=1.5cm]{geometry}
+\usepackage{enumitem}
+\usepackage[english]{babel}
+\usepackage{float, framed}
+\usepackage{xcolor}
+\usepackage{global-macros}
+
+% Micro fixes in typography
+\usepackage{microtype}
+
+%% fancyhdr and pagestyle
+
+\pagestyle{plain}
+
+%% geometry
+
+\setlength{\fboxrule}{1.0pt}
+\setlength{\fboxsep}{6pt}
+
+% Single space after period
+\frenchspacing
+
+%% Text and page colors
+
+% \definecolor{background}{rgb}{0.10, 0.10, 0.10}
+% \definecolor{textcolor}{rgb}{1, 1, 1}
+% \pagecolor{background}
+% \color{textcolor}
+
+%% Environments
+
+\theoremstyle{plain} % default
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{thmm}{Theorem}
+\newtheorem*{thm*}{Theorem}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{lemm}{Lemma}
+\newtheorem*{lem*}{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem*{prop*}{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem*{axiom}{Axiom}
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{defnn}{Definition}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem{exmp}[thm]{Example}
+\newtheorem{obs}[thm]{Observation}
+\newtheorem*{obs*}{Observation}
+\newtheorem{rem}[thm]{Remark}
+\newtheorem*{rem*}{Remark}
+
+\theoremstyle{remark}
+\newtheorem{case}[thm]{Case}
+\newtheorem*{note}{Note}

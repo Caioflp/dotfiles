@@ -1,0 +1,65 @@
+\ProvidesPackage{global-macros}
+
+% \newcommand{\R}{\mathbb{R}}
+% \newcommand{\Z}{\mathbb{Z}}
+% \newcommand{\N}{\mathbb{N}}
+% \newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbf{R}}
+\newcommand{\Z}{\mathbf{Z}}
+\newcommand{\N}{\mathbf{N}}
+\newcommand{\Q}{\mathbf{Q}}
+
+\newcommand{\rr}{R_{r}}
+\newcommand{\tq}{ : }
+\newcommand{\mdc}{\text{mdc}}
+\newcommand{\mmc}{\text{mmc}}
+% \newcommand{\defeq}{\vcentcolon=}
+\newcommand{\defeq}{\triangleq}
+\newcommand{\comp}{\mathscr{C}}
+\newcommand{\dotprod}[1]{\langle #1 \rangle}
+\newcommand{\prob}{\mathbb{P}}
+\newcommand{\ind}{\mathbb{1}}
+\newcommand{\mean}{\mathbb{E}}
+\DeclareMathOperator{\var}{Var}
+
+%% Upper and Lower Integrals
+\newcommand{\loint}[4]{
+    \lefteqn{\int_{ #1 }^{ #2 } #3}\lefteqn{\hspace{0.0ex}\rule[-2.25ex]{1.1ex}{.05ex}} \phantom{\int_{ #1 }^{ #2 } #3}\mathrm{d}#4
+}
+\newcommand{\upint}[4]{
+    \lefteqn{\int_{ #1 }^{ #2 } #3 \ }\lefteqn{\hspace{1.2ex}\rule[ 3.35ex]{1.1ex}{.05ex}} \phantom{\int_{ #1 }^{ #2 } #3 \ }\mathrm{d}#4
+}
+
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}%
+\DeclarePairedDelimiter\norm{\lVert}{\rVert}%
+\DeclareMathOperator{\sen}{sen}
+\DeclareMathOperator{\dom}{dom}
+\DeclareMathOperator{\epi}{epi}
+\DeclareMathOperator{\intt}{int}
+\DeclareMathOperator{\cl}{cl}
+\DeclareMathOperator{\sign}{sign}
+
+% Swap the definition of \abs* and \norm*, so that \abs
+% and \norm resizes the size of the brackets, and the 
+% starred version does not.
+
+\makeatletter
+\let\oldabs\abs
+\def\abs{\@ifstar{\oldabs}{\oldabs*}}
+%
+\let\oldnorm\norm
+\def\norm{\@ifstar{\oldnorm}{\oldnorm*}}
+\makeatother
+
+% Bold names
+\newcommand{\bx}{\boldsymbol x}
+\newcommand{\by}{\boldsymbol y}
+\newcommand{\bz}{\boldsymbol z}
+\newcommand{\bg}{\boldsymbol g}
+\newcommand{\be}{\boldsymbol e}
+\newcommand{\bv}{\boldsymbol v}
+
+\newcommand{\bzero}{\mathbf 0}
+\newcommand{\drm}{\mathrm{d}}

@@ -1,0 +1,98 @@
+\ProvidesPackage{exercise-sheet}
+
+\KOMAoptions{
+    fontsize=12pt,
+    titlepage=false,
+}
+
+\usepackage{amsmath, mathtools, amssymb, amsfonts, amsthm, mathrsfs}
+\usepackage[brazilian]{babel}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{cancel}
+% Fonts
+\usepackage{newpxtext}
+\usepackage{mathpazo}
+\usepackage{pifont} % Fleurons
+\newcommand{\leafleft}{\ding{167}\enskip}
+\newcommand{\leafright}{\enskip\rotatebox[origin=c]{180}{\ding{167}}}
+\usepackage{enumitem}
+\setlist[description]{%
+    leftmargin=0pt,
+    topsep=.5em,               % space before start / after end of list
+    itemsep=5pt,               % space between items
+    font={\normalfont\textit}, % set the label font
+}
+
+\usepackage{global-macros}
+
+% Format fonts for different text elements
+\setkomafont{title}{\scshape\lsstyle}
+\setkomafont{subtitle}{\normalfont\itshape\large}
+\setkomafont{section}{\centering\normalfont\scshape\large\lsstyle}
+\setkomafont{author}{\normalsize}
+\setkomafont{date}{\normalsize}
+\setkomafont{publishers}{\normalsize}
+
+\renewcommand{\sectionformat}{\leafleft\thesection.\enskip}
+% Create new section command for embellishments
+\newcommand{\mysection}[1]{\section{#1\leafright}}
+\newcommand{\sep}{ \bigskip \hrule \bigskip }
+
+% Theorem-like environments
+\newtheoremstyle{default} % name
+        {0.7em}                    % Space above
+        {0.5em}                    % Space below
+        {\itshape}                   % Body font
+        {}                           % Indent amount
+        {\bfseries}                   % Theorem head font
+        {}                          % Punctuation after theorem head
+        {0.5em}                       % Space after theorem head
+        {}  % Theorem head spec (can be left empty, meaning ‘normal’)
+\theoremstyle{default} % default
+\newtheorem{teo}{Teorema}
+% \newtheorem{teoo}{Teorema}
+\newtheorem*{teo*}{Teorema}
+% \newtheorem{lem}[thm]{Lemma}
+\newtheorem{lemm}{Lema}
+\newtheorem*{lem*}{Lemma}
+\newtheorem{prop}[teo]{Proposição}
+\newtheorem*{prop*}{Proposição}
+\newtheorem{cor}[teo]{Corolário}
+\newtheorem{corr}{Corolário}
+\newtheorem*{axioma}{Axioma}
+
+\newtheoremstyle{exercise} % name
+        {0.7em}                    % Space above
+        {0.5em}                    % Space below
+        {\normalfont}
+        {}                           % Indent amount
+        {\bfseries}                   % Theorem head font
+        {}                          % Punctuation after theorem head
+        {0.5em}                       % Space after theorem head
+        {}  % Theorem head spec (can be left empty, meaning ‘normal’)
+\theoremstyle{exercise}
+\newtheorem*{exercise*}{Exercício}
+\newtheorem{exercise}{Exercício}
+\newtheoremstyle{proof} % name
+        {1em}                    % Space above
+        {0.5em}                    % Space below
+        {\normalfont}                   % Body font
+        {}                           % Indent amount
+        {\itshape}                   % Theorem head font
+        {}                          % Punctuation after theorem head
+        {0.5em}                       % Space after theorem head
+        {}  % Theorem head spec (can be left empty, meaning ‘normal’)
+\theoremstyle{proof}
+\newtheorem*{sol}{Solução:}
+\newtheoremstyle{fact} % name
+        {0.7em}                    % Space above
+        {0.5em}                    % Space below
+        {\normalfont}                   % Body font
+        {}                           % Indent amount
+        {\scshape\lsstyle}                   % Theorem head font
+        {}                          % Punctuation after theorem head
+        {0.5em}                       % Space after theorem head
+        {}  % Theorem head spec (can be left empty, meaning ‘normal’)
+\theoremstyle{fact}
+\newtheorem{fact}{Fato}
