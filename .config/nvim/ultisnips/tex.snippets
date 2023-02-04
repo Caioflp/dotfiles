@@ -1,0 +1,661 @@
+snippet bibarticle "Bib file entry for articles"
+@article{einstein,
+	author = "Albert Einstein",
+	title = "{Zur Elektrodynamik bewegter K{\"o}rper}. ({German})
+	[{On} the electrodynamics of moving bodies]",
+	journal = "Annalen der Physik",
+	volume = "322",
+	number = "10",
+	pages = "891--921",
+	year = "1905",
+	DOI = "http://dx.doi.org/10.1002/andp.19053221004",
+	keywords = "physics"
+}
+
+endsnippet
+snippet tikz "Snippet for learning tikz"
+\documentclass[a4paper, 12pt]{article}
+\usepackage{tikz}
+
+\begin{document}
+
+\begin{tikzpicture}
+	$0
+\end{tikzpicture}
+
+\end{document}
+endsnippet
+
+snippet exsheet "template for exercise sheets" 
+\documentclass{scrartcl}
+
+\usepackage{exercise-sheet}
+\usepackage{global-macros}
+
+\title{$1}
+\author{Caio Lins}
+\date{$2}
+
+\begin{document}
+
+\maketitle
+
+$0
+
+\end{document}
+endsnippet
+
+
+snippet inputex "inputing exercise into master.tex" 
+\input{./exercise-$1.tex}
+\medskip
+endsnippet
+
+
+snippet exercise "template for single exercise" 
+%! TEX root = ../main.tex
+
+\exercise $1
+
+\begin{solution}
+$0
+\qed
+\end{solution}
+endsnippet
+
+
+snippet part "template for single part of exercise" 
+\begin{parts}
+
+\item $1
+
+	\begin{solution}
+	$0
+	\qed
+	\end{solution}
+\end{parts}
+endsnippet
+
+snippet aulamaster "template for master lectures file" 
+%! TEX program = 'xelatex'
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage{exercise-sheet}
+\usepackage{global-macros}
+\input{../preambulo.tex}
+
+\class{$1}
+\title{Anotações de aula}
+\student{$3}
+\professor{$4}
+\semester{$5}
+
+\begin{document}
+
+\maketitle
+
+$0
+
+\end{document}
+endsnippet
+
+snippet aula "template for class lectures" 
+%! TEX root = ./master.tex
+\section{$1}
+
+$0
+endsnippet
+
+
+snippet inputaula "inputs lecture in master file" 
+\input{./aula-$0.tex}
+endsnippet
+
+
+snippet beg "snippet for environments"
+\begin{$1}
+	$0
+\end{$1}
+endsnippet
+
+
+# snippet ssum "summations in latex" Aw
+# \sum_{ $1 \}^{ $2 \}$0
+# endsnippet
+
+
+snippet mk "Inline math" Aw
+\$ $1 \$$0
+endsnippet
+
+
+snippet ml "Displayed math" Aw
+\begin{equation*}
+	$1
+.\end{equation*}$0
+endsnippet
+
+
+snippet eq "template for equations" 
+\begin{equation}
+    $1
+.\end{equation}$0
+endsnippet
+
+
+snippet al "template for numbered align" 
+\begin{align}
+    $1
+.\end{align}$0
+endsnippet
+
+
+snippet ali "template for not numbered align" 
+\begin{align*}
+    $1
+.\end{align*}$0
+endsnippet
+
+
+snippet en "template for enumerate" 
+\begin{enumerate}
+    \item $1
+\end{enumerate}$0
+endsnippet
+
+
+snippet item "itemize" 
+\begin{itemize}
+	\item $1
+\end{itemize}$0
+endsnippet
+
+
+snippet teo "theorem environment" b
+\begin{teo}
+	$1
+\end{teo}$0
+endsnippet
+
+snippet thm "theorem environment" b
+\begin{thm}
+	$1
+\end{thm}$0
+endsnippet
+
+snippet lem "lemma environment" b
+\begin{lem}
+	$1
+\end{lem}$0
+endsnippet
+
+
+snippet prop "proposition environment" b
+\begin{prop}
+	$1
+\end{prop}$0
+endsnippet
+
+
+snippet cor "corollary environment" b
+\begin{cor}
+	$1
+\end{cor}$0
+endsnippet
+
+
+snippet defn "definition environment" b
+\begin{defn}
+	$1
+\end{defn}$0
+endsnippet
+
+
+snippet conj "conjecture environment" b
+\begin{conj}
+	$1
+\end{conj}$0
+endsnippet
+
+
+snippet obs "Observation environment"
+\begin{obs}
+	$1
+\end{obs}$0
+endsnippet
+
+
+snippet exmp "example environment" b
+\begin{exmp}
+	$1
+\end{exmp}$0
+endsnippet
+
+
+snippet rem "theorem environment" b
+\begin{rem}
+	$1
+\end{rem}$0
+endsnippet
+
+
+snippet proof "proof environment" b
+\begin{proof}
+	$1
+\end{proof}$0
+endsnippet
+
+
+snippet funcc "f : ->" Aw
+$1 : $2 \to $0
+endsnippet
+
+
+snippet sr "^2" Ai
+^2
+endsnippet
+
+
+snippet cb "^3" Ai
+^3
+endsnippet
+
+
+snippet td "to the" Ai
+^{ $1 }$0
+endsnippet
+
+
+snippet sb "_{}" Ai
+_{ $1 }$0
+endsnippet
+
+
+snippet cd "\cdot" Aw
+\cdot
+endsnippet
+
+
+snippet ... "\ldots" Ai
+\dots
+endsnippet
+
+
+snippet pp "normal parentheses" Aw
+( $1 )$0
+endsnippet
+
+snippet pb "normal parentheses" Aw
+[ $1 ]$0
+endsnippet
+
+snippet ( "curly brackets" i
+($1)$0
+endsnippet
+
+
+snippet { "curly brackets" i
+{$1}$0
+endsnippet
+
+
+snippet [ "square brackets" i
+[$1]$0
+endsnippet
+
+
+snippet pq "\left( \right)" Aw
+\left($1\right)$0
+endsnippet
+
+
+snippet pw "\left[ \right]" Aw
+\left[$1\right]$0
+endsnippet
+
+
+snippet // "\frac{}{}" Aw
+\frac{ $1 }{ $2 }$0
+endsnippet
+
+
+snippet mat "Matrix" 
+\begin{bmatrix}
+	$1
+\end{bmatrix}$0
+endsnippet
+
+
+snippet normm "Vector norm" A
+\norm{ $1 }$0
+endsnippet
+
+
+snippet abss "real number norm" A
+\abs{ $1 }$0
+endsnippet
+
+
+snippet lq "less or equal" Aw
+\leq
+endsnippet
+
+
+snippet gq "less or equal" Aw
+\geq
+endsnippet
+
+
+snippet nq "not equal" Aw
+\neq
+endsnippet
+
+
+snippet sqr "\sqrt{}" Aw
+\sqrt{ $1 }$0
+endsnippet
+
+
+snippet ggmm "\gamma" Aw
+\gamma
+endsnippet
+
+
+snippet pii "\pi" Aw
+\pi
+endsnippet
+
+
+snippet alff "\alpha" Aw
+\alpha
+endsnippet
+
+snippet tauu "\tay" Aw
+\tau
+endsnippet
+
+snippet nabb "nabla" Aw
+\nabla
+endsnippet
+
+snippet partt "\partial" Aw
+\partial
+endsnippet
+
+
+snippet nuu "\nu" Aw
+\nu
+endsnippet
+
+snippet Pii "\Pi" Aw
+\Pi
+endsnippet
+
+snippet muu "\mu" Aw
+\mu
+endsnippet
+
+snippet rho "\rho" Aw
+\rho
+endsnippet
+
+snippet psii "\psi" Aw
+\psi
+endsnippet
+
+snippet chii "\chi" Aw
+\chi
+endsnippet
+
+snippet ett "\eta" Aw
+\eta
+endsnippet
+
+
+snippet lambb "\lambda" Aw
+\lambda
+endsnippet
+
+
+snippet Lambb "\Lambda" Aw
+\Lambda
+endsnippet
+
+
+snippet epss "epsilon" Aw
+\varepsilon
+endsnippet
+
+
+snippet phii "phi" Aw
+\varphi
+endsnippet
+
+
+snippet Phii "Phi" Aw
+\Phi
+endsnippet
+
+snippet betaa "beta" Aw
+\beta
+endsnippet
+
+
+snippet deltt "delta" Aw
+\delta
+endsnippet
+
+
+snippet Deltt "Delta" Aw
+\Delta
+endsnippet
+
+
+snippet tett "theta" Aw
+\theta
+endsnippet
+
+
+snippet sigg "\sigma" Aw
+\sigma
+endsnippet
+
+
+snippet Gamm "\Gamma" Aw
+\Gamma
+endsnippet
+
+snippet Psii "\Psi" Aw
+\Psi
+endsnippet
+
+
+snippet Sigg "\Sigma" Aw
+\Sigma
+endsnippet
+
+
+snippet omm "\omega" Aw
+\omega
+endsnippet
+
+
+snippet Omm "\Omega" Aw
+\Omega
+endsnippet
+
+snippet xsi "\varxsi" Aw
+\xi
+endsnippet
+
+snippet Thett "\Theta" Aw
+\Theta
+endsnippet
+
+
+snippet sett "\{\}" Aw
+\\left\\{ $1 \\right\\}$0
+endsnippet
+
+
+snippet gelin "gaussian elimination" Aw
+\xrightarrow{ $1 }$0
+endsnippet
+
+
+snippet v "vector" i
+\vec{ $1 }$0
+endsnippet
+
+
+snippet defeq "definition" Aw
+\defeq
+endsnippet
+
+
+snippet sup "supreme" 
+\sup
+endsnippet
+
+
+snippet inf "infimo" 
+\inf
+endsnippet
+
+
+snippet << "\subseteq" Aw
+\subseteq
+endsnippet
+
+
+snippet >> "\implies" Ai
+\implies
+endsnippet
+
+
+snippet dp "dot product" Aw
+\dotprod{ $1 }$0
+endsnippet
+
+
+snippet rank "\rk()" A
+\rk($1)$0
+endsnippet
+
+
+snippet seg "\overline" w
+\overline{$1}$0
+endsnippet
+
+
+snippet ddiff "derivative" A
+\derivv{ $1 }{ $2 }$0
+endsnippet
+
+
+snippet intt "integral" A
+\int_{ $1 }^{ $2 } $3 \ \mathrm{d}$0
+endsnippet
+
+
+# snippet eval "eval |" A
+# \Big|_{ $1 }^{ $2 }$0
+# endsnippet
+
+
+snippet span "span" A
+\vspan 
+endsnippet
+
+
+snippet limm "limit" A
+\lim\limits_{ $1 \to $2 }$0
+endsnippet
+
+snippet hatt "\hat{}" A
+\hat{ $1 }$0
+endsnippet
+
+snippet til "\tilde{}" A
+\tilde{ $1 }$0
+endsnippet
+
+snippet projj "\proj" A
+\proj_{ $1 } $0
+endsnippet
+
+snippet dett "\det" A
+\det $0
+endsnippet
+
+snippet trr "trace" A
+\tr $0
+endsnippet
+
+
+snippet frame "beamer frame"
+\begin{frame}
+	\frametitle{Discussão dos resultados}
+
+\end{frame}
+endsnippet
+
+
+snippet qm "quotation marks" Aw
+\`\`$1''$0
+endsnippet
+
+
+snippet fig ""
+\begin{figure}[htb]
+    \begin{center}
+		\includegraphics[width=.7\textwidth]{}
+    \end{center}
+	\caption{}
+	\label{}
+\end{figure}
+endsnippet
+
+snippet binom
+\binom{$1}{$2}$0
+endsnippet
+
+snippet poo "Partial order" Aw
+\prec
+endsnippet
+
+snippet upint "Upper Integral" Aw
+\upint{$1}{$2}{$3}{$4}$0
+endsnippet
+
+snippet loint "Upper Integral" Aw
+\loint{$1}{$2}{$3}{$4}$0
+endsnippet
+
+snippet mcal "caligraphic math" Aw
+\mathcal{$1}$0
+endsnippet
+
+snippet bzero "bold zero" Aw
+\bzero
+endsnippet
+
+snippet barr "Overbar" Aw
+\bar{ $1 }$0
+endsnippet
+
+snippet scrr "Math script" Aw
+\mathscr{$1}$0
+endsnippet
+
+snippet fl "Floor function" w
+\floor{ $1 }$0
+endsnippet
+
+snippet cl "Ceil function" w
+\ceil{ $1 }$0
+endsnippet
+
+snippet bigO "big O notation" Aw
+\mathcal{O}
+endsnippet
