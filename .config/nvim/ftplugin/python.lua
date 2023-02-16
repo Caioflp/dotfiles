@@ -1,0 +1,5 @@
+-- vim.lsp.start({
+--    name = '/home/caio/miniconda3/bin/python-lsp',
+--    cmd = {'pylsp'},
+--    root_dir = vim.fs.find({'src'}, { upward = true, stop = 'fgv' })[1],
+-- })

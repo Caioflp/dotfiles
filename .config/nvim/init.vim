@@ -176,7 +176,7 @@ hi link juliaSemicolon Operator
 hi link juliaFunctionCall Identifier
 
 " Python support
-let g:python3_host_prog='/usr/bin/python'
+let g:python3_host_prog='/home/caio/miniconda3/bin/python'
 
 " Airline stuff
 let g:airline_powerline_fonts = 1

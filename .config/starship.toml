@@ -1,5 +1,6 @@
 add_newline = false
 
+
 [aws]
 symbol = "  "
 
@@ -11,6 +12,7 @@ symbol = " "
 
 [conda]
 symbol = " "
+ignore_base = false
 
 [dart]
 symbol = " "
