@@ -38,6 +38,12 @@
 * Implemented Nesterov Accelerated Gradient algorithm, it is not working.
   Graphs are shet.
 
+## 15.02.23.
+
+* Meeting with Yuri. Nesterov worked after tweaking the learning rate.
+  Need to code ML version. Maybe start to write thesis with what we did
+  in this problem.
+
 
 
 ## MFG Project
