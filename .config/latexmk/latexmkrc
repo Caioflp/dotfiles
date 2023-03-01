@@ -1,0 +1,6 @@
+$emulate_aux = 1; # latex in TeXLive does not support aux dir
+$aux_dir = './.aux';
+$out_dir = './.out';
+$pdf_mode = 4; # Use LuaLaTeX
+$preview_continuous_mode = 1;
+$pdf_previewer = 'start zathura %O %S';
