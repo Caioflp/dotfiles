@@ -1,8 +1,17 @@
 " Enable true color
 set termguicolors
 
+" Set leader key
+let mapleader = ","
+
 " Edit alternate file 
 nnoremap <silent> <c-6> :e#<CR>
+" Edit next buffer
+nnoremap <silent> <leader>n :bnext<CR>
+" Edit previous buffer
+nnoremap <silent> <leader>p :bprev<CR>
+" Delete current buffer
+nnoremap <silent> <leader>d :bdelete<CR>
 
 " syntax
 syntax on
@@ -104,15 +113,15 @@ let g:vimtex_view_general_viewer = 'zathura'
 " syntax hightlighting
 let python_highlight_all=1
 
-" shortcut to test functions
-function! g:PythonEvaluateBuffer()
-  if !exists('b:python_buf')
-    let b:python_buf = inputlist(["Select one of the following buffers:"] + map(tabpagebuflist(), { i, v -> i+1 .. ". " .. bufname(v) }))
-  endif
-  call term_sendkeys(b:python_buf, "from ". expand("%") ."\<BS>\<BS>\<BS> import *\<CR>" )
-endfunction
- 
-nnoremap <Leader>p :call g:PythonEvaluateBuffer()<CR>
+" " shortcut to test functions
+" function! g:PythonEvaluateBuffer()
+"   if !exists('b:python_buf')
+"     let b:python_buf = inputlist(["Select one of the following buffers:"] + map(tabpagebuflist(), { i, v -> i+1 .. ". " .. bufname(v) }))
+"   endif
+"   call term_sendkeys(b:python_buf, "from ". expand("%") ."\<BS>\<BS>\<BS> import *\<CR>" )
+" endfunction
+"  
+" nnoremap <Leader>p :call g:PythonEvaluateBuffer()<CR>
 
 " python-syntax plugin
 let g:python_highlight_builtins = 1
