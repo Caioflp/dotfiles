@@ -1,4 +1,4 @@
-# Undergrad Thesis
+# Undergraduate Thesis
 
 ## 04.02.23.
 
@@ -32,7 +32,6 @@
 * Decided I'm going to track my Functional Analysis progress here. Right
   now I'm at the Open Mapping and Closed Graph theorems.
 
-
 ## 09.02.23.
 
 * Implemented Nesterov Accelerated Gradient algorithm, it is not working.
@@ -43,6 +42,11 @@
 * Meeting with Yuri. Nesterov worked after tweaking the learning rate.
   Need to code ML version. Maybe start to write thesis with what we did
   in this problem.
+
+## 28.02.23.
+
+* Still need to implement boost version of Nesterov acceleration.
+  Should study papers which address acceleration in stochastic setting.
 
 
 
