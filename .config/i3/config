@@ -219,7 +219,7 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id feh --bg-fill $HOME/.config/wallpaper/wallpaper.png
 
 # Lock screen
-## Dim the screen after 3 minuts of inactivity, lock the screen two
-# minutes later
-exec_always --no-startup-id xset 180 120
+## Dim the screen after 2 minutes of inactivity, lock the screen one
+# minute later
+exec_always --no-startup-id xset 120 60
 exec_always --no-startup-id xss-lock -- i3lock -i ~/.config/wallpaper/wallpaper.png -p default --nofork &

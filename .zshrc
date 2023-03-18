@@ -50,8 +50,12 @@ alias c='clear'
 alias todo='vim ~/todo.md && exit'
 alias python3='/usr/bin/python'
 alias pip='pip3'
+
 # Restart f*cking wifi card driver
 alias resath='sudo modprobe -r ath10k_pci && sudo modprobe ath10k_pci' 
+
+# tlmgr is tllocalmgr
+alias tlmgr='tllocalmgr'
 
 # Vim
 alias vim='nvim'
