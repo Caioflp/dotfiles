@@ -48,6 +48,17 @@
 * Still need to implement boost version of Nesterov acceleration.
   Should study papers which address acceleration in stochastic setting.
 
+## 29.03.23.
+
+* I'm back, after a month of struggling with other stuff.
+* Next step is to think how to fit the NPIV problem statement into the
+  framework of the SIP paper.
+* After this, we should take a step back and think about how the proof of
+  the main theorem changes when we substitute things we knew exactly (for
+  example, the kernel or the operator A) for approximations.
+* Meanwhile, read the papers about NPIV to see the kind of things people
+  do.
+
 
 
 ## MFG Project

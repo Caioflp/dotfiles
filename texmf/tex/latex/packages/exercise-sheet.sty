@@ -6,7 +6,7 @@
 }
 
 \usepackage{amsmath, mathtools, amssymb, amsfonts, amsthm, mathrsfs}
-\usepackage[brazilian]{babel}
+% \usepackage[english]{babel}
 \usepackage{microtype}
 \usepackage{graphicx}
 \usepackage{cancel}
@@ -50,15 +50,15 @@
         {0.5em}                       % Space after theorem head
         {}  % Theorem head spec (can be left empty, meaning ‘normal’)
 \theoremstyle{default} % default
-\newtheorem{teo}{Theorem}
-% \newtheorem{teoo}{Teorema}
-\newtheorem*{teo*}{Theorem}
+\newtheorem{thm}{Theorem}
+% \newtheorem{thmo}{Teorema}
+\newtheorem*{thm*}{Theorem}
 % \newtheorem{lem}[thm]{Lemma}
 \newtheorem{lemm}{Lemma}
 \newtheorem*{lem*}{Lemma}
-\newtheorem{prop}[teo]{Proposition}
+\newtheorem{prop}[thm]{Proposition}
 \newtheorem*{prop*}{Proposition}
-\newtheorem{cor}[teo]{Corollary}
+\newtheorem{cor}[thm]{Corollary}
 \newtheorem{corr}{Corollary}
 \newtheorem*{axioma}{Axiom}
 
@@ -74,6 +74,7 @@
 \theoremstyle{exercise}
 \newtheorem*{exercise*}{Exercise}
 \newtheorem{exercise}{Exercise}
+\newtheorem{defn}[thm]{Definition}
 \newtheoremstyle{proof} % name
         {1em}                    % Space above
         {0.5em}                    % Space below

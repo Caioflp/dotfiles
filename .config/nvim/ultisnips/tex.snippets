@@ -543,9 +543,9 @@ snippet dotp "dot product" Aw
 endsnippet
 
 
-snippet rank "\rk()" A
-\rk($1)$0
-endsnippet
+# snippet rank "\rk()" A
+# \rk($1)$0
+# endsnippet
 
 
 snippet seg "\overline" w
@@ -598,14 +598,6 @@ snippet trr "trace" A
 endsnippet
 
 
-snippet frame "beamer frame"
-\begin{frame}
-	\frametitle{Discussão dos resultados}
-
-\end{frame}
-endsnippet
-
-
 snippet qm "quotation marks" Aw
 \`\`$1''$0
 endsnippet
@@ -645,6 +637,10 @@ snippet mbb "blackboard bold math" Aw
 \mathbb{$1}$0
 endsnippet
 
+snippet msc "math script" Aw
+\mathscr{$1}$0
+endsnippet
+
 
 snippet bzero "bold zero" Aw
 \bzero
@@ -668,4 +664,10 @@ endsnippet
 
 snippet bigO "big O notation" Aw
 \mathcal{O}
+endsnippet
+
+snippet frame "Beamer frame"
+\begin{frame}
+	\frametitle{$1}
+\end{frame}
 endsnippet
