@@ -357,7 +357,7 @@ snippet sqr "\sqrt{}" Aw
 endsnippet
 
 
-snippet ggmm "\gamma" Aw
+snippet ggam "\gamma" Aw
 \gamma
 endsnippet
 
@@ -617,9 +617,9 @@ snippet binom
 \binom{$1}{$2}$0
 endsnippet
 
-snippet poo "Partial order" Aw
-\prec
-endsnippet
+# snippet poo "Partial order" Aw
+# \prec
+# endsnippet
 
 snippet upint "Upper Integral" Aw
 \upint{$1}{$2}{$3}{$4}$0
@@ -670,4 +670,12 @@ snippet frame "Beamer frame"
 \begin{frame}
 	\frametitle{$1}
 \end{frame}
+endsnippet
+
+snippet dd "differential operator" Aw
+\mathop{$1}$0
+endsnippet
+
+snippet ref "Add reference"
+(\ref{$1})$0
 endsnippet

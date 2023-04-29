@@ -1,10 +1,9 @@
 [user]
 	name = Caioflp
 	email = caiolinspeixoto@gmail.com
+	signingkey = /home/caio/.ssh/id_ed25519.pub
 [pager]
 	branch = false
-[credential]
-	helper = store
 [push]
 	autoSetupRemote = true
 [filter "lfs"]
@@ -14,3 +13,5 @@
 	smudge = git-lfs smudge -- %f
 [init]
 	defaultBranch = main
+[gpg]
+	format = ssh
