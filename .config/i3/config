@@ -210,7 +210,7 @@ for_window [title="^journal.md"] move scratchpad
 bindsym $mod+$compose+j [title="^journal.md"] scratchpad show
 
 # Auto start Notion on first workspace
-exec_always --no-startup-id notion-app
+# exec_always --no-startup-id notion-app
 
 # Picom
 exec_always --no-startup-id picom
