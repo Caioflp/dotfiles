@@ -74,7 +74,7 @@ Plug 'tpope/vim-surround'
 Plug 'lervag/vimtex'
 Plug 'vim-scripts/indentpython.vim'
 Plug 'SirVer/ultisnips'
-Plug 'dense-analysis/ale'
+" Plug 'dense-analysis/ale'
 Plug 'vim-python/python-syntax'
 Plug 'JuliaEditorSupport/julia-vim'
 Plug 'vim-airline/vim-airline'
@@ -103,7 +103,8 @@ let g:vimtex_quickfix_ignore_filters = [
     \ 'Token not allowed in a PDF string',
     \ ]
 let g:vimtex_version_check = 0
-let g:vimtex_view_general_viewer = 'zathura'
+" let g:vimtex_view_general_viewer = 'zathura'
+let g:vimtex_view_method = 'sioyek'
 " let g:vimtex_view_general_options_latexmk = '-reuse-instance'
 "" set conceallevel=1
 "" let g:tex_conceal='abdmg'
@@ -112,16 +113,6 @@ let g:vimtex_view_general_viewer = 'zathura'
 
 " syntax hightlighting
 let python_highlight_all=1
-
-" " shortcut to test functions
-" function! g:PythonEvaluateBuffer()
-"   if !exists('b:python_buf')
-"     let b:python_buf = inputlist(["Select one of the following buffers:"] + map(tabpagebuflist(), { i, v -> i+1 .. ". " .. bufname(v) }))
-"   endif
-"   call term_sendkeys(b:python_buf, "from ". expand("%") ."\<BS>\<BS>\<BS> import *\<CR>" )
-" endfunction
-"  
-" nnoremap <Leader>p :call g:PythonEvaluateBuffer()<CR>
 
 " python-syntax plugin
 let g:python_highlight_builtins = 1
@@ -185,7 +176,9 @@ hi link juliaSemicolon Operator
 hi link juliaFunctionCall Identifier
 
 " Python support
-let g:python3_host_prog='/home/caio/miniconda3/bin/python'
+" let g:python3_host_prog='/home/caio/miniconda3/bin/python'
+let g:python3_host_prog='/opt/homebrew/Caskroom/miniconda/base/bin/python'
+
 
 " Airline stuff
 let g:airline_powerline_fonts = 1
