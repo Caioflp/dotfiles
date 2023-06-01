@@ -34,6 +34,9 @@ HISTSIZE=10000
 SAVEHIST=10000
 WORDCHARS=${WORDCHARS//\/[&.;]}                                 # Don't consider certain characters part of the word
 
+# Use vi keybindings
+bindkey -v
+
 ## Alias section 
 
 # General
@@ -90,7 +93,8 @@ export LESS=-R
 # Use syntax highlighting
 # source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Use history substring search
-source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+# source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+source $HOMEBREW_PREFIX/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 # bind UP and DOWN arrow keys to history substring search
 zmodload zsh/terminfo
 bindkey "$terminfo[kcuu1]" history-substring-search-up
@@ -206,7 +210,7 @@ add-zsh-hook preexec mzc_termsupport_preexec
 
 # File and Dir colors for ls and other outputs
 # export LS_OPTIONS='--color=auto'
-eval "$(dircolors -b)"
+# eval "$(dircolors -b)"
 # alias ls='ls $LS_OPTIONS'
 
 # Prompt
@@ -215,7 +219,8 @@ enable vcs_infoprecmd () { vcs_info }
 zstyle ':vcs_info:*' formats ' (%F{81}%b%f)'
 # 75, 69, 63 -- colors
 # PROMPT='%B%F{75}%n%f%F{69}@%f%F{75}%m%f%k %B%F{69}%(4~|...|)%3~%f %F{75}$%f %b'
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # () {
 #   emulate -L zsh
 # 
@@ -279,14 +284,14 @@ eval "$(starship init zsh)"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/caio/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/opt/homebrew/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/caio/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/caio/miniconda3/etc/profile.d/conda.sh"
+    if [ -f "/opt/homebrew/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
+        . "/opt/homebrew/Caskroom/miniconda/base/etc/profile.d/conda.sh"
     else
-        export PATH="/home/caio/miniconda3/bin:$PATH"
+        export PATH="/opt/homebrew/Caskroom/miniconda/base/bin:$PATH"
     fi
 fi
 unset __conda_setup
