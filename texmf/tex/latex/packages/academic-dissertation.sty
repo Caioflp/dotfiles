@@ -1,0 +1,33 @@
+\ProvidesPackage{academic-dissertation}
+\usepackage{amsthm}
+\usepackage{biblatex}
+\usepackage{csquotes}
+\usepackage{enumitem}
+\usepackage{microtype} % Minor typographic improvements
+
+% Remove left margin in description environment
+\setlist[description]{leftmargin=0pt}
+
+% Amsmath environments
+\newtheoremstyle{default} % name
+        {0.7em}                    % Space above
+        {0.5em}                    % Space below
+        {\itshape}                   % Body font
+        {}                           % Indent amount
+        {\bfseries}                   % Theorem head font
+        {}                          % Punctuation after theorem head
+        {0.5em}                       % Space after theorem head
+        {}  % Theorem head spec (can be left empty, meaning ‘normal’)
+\theoremstyle{default} % default
+\newtheorem{thm}[subsection]{Theorem}
+\newtheoremstyle{plain} % name
+        {0.7em}                    % Space above
+        {0.5em}                    % Space below
+        {\normalfont}                   % Body font
+        {}                           % Indent amount
+        {\bfseries}                   % Theorem head font
+        {}                          % Punctuation after theorem head
+        {0.5em}                       % Space after theorem head
+        {}  % Theorem head spec (can be left empty, meaning ‘normal’)
+\theoremstyle{plain}
+\newtheorem{rem}[subsection]{Remark}
