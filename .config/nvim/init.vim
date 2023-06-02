@@ -93,6 +93,7 @@ let g:UltiSnipsEditSplit="vertical"
 let g:UltiSnipsSnippetDirectories=["ultisnips"]
 
 nnoremap ,as :UltiSnipsEdit<CR>
+let g:UltiSnipsJumpForwardTrigger="<tab>"
 
 "------------------------------------vim-tex------------------------------------
 

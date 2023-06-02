@@ -3,4 +3,4 @@
 $out_dir = './.out';
 $pdf_mode = 4; # Use LuaLaTeX
 $preview_continuous_mode = 1;
-$pdf_previewer = 'start zathura %O %S';
+$pdf_previewer = 'start sioyek %O %S';

@@ -263,7 +263,7 @@ PATH=/usr/local/texlive/2022/bin/x86_64-linux:$PATH; export PATH
 MANPATH=/usr/local/texlive/2022/texmf-dist/doc/man:$MANPATH; export MANPATH 
 INFOPATH=/usr/local/texlive/2022/texmf-dist/doc/info:$INFOPATH; export INFOPATH
 TEXMFLOCAL=/usr/local/texlive/texmf-local; export TEXMFLOCAL
-TEXMFHOME=$HOME/texmf; export TEXMFHOME
+TEXMFHOME=$HOME/Library/texmf; export TEXMFHOME
 TEXMFVAR=$HOME/.texlive2020/texmf-var; export TEXMFVAR
 # Python
 PYTHONPATH=..:.:$PYTHONPATH; export PYTHONPATH
